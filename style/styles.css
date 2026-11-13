@@ -62,9 +62,15 @@ h1 {
 }
 
 h2,
-h3, h4 {
+h3 {
     font-family: "playfair display", serif;
     color: #0d0d0d;
+}
+
+h4 {
+    font-family: "sacramento-pro", sans-serif;
+    color: #0d0d0d;
+    font-size: 2rem;
 }
 
 .med-varme h2 {
@@ -111,7 +117,7 @@ footer {
     background-color: #fff2f2;
     padding: 1rem;
     display: flex;
-    color: #d98825;
+    color: #0d0d0d;
     text-align: center;
     display: block;
 }
