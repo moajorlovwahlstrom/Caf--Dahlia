@@ -1,5 +1,8 @@
+/*Formulär*/
+
 const formular = document.getElementById("kontaktformular");
 
+if (formular) {
 formular.addEventListener("submit", function (event) {
     event.preventDefault();
     const namn = document.getElementById("namn").value;
@@ -11,4 +14,34 @@ formular.addEventListener("submit", function (event) {
     bekraftelse.style.padding= "1rem";
 
     formular.reset();
+});
+}
+
+/*Hem-bilder*/
+const bilder=document.querySelectorAll (".hem-bilder img");
+
+const lightbox=document.getElementById("lightbox");
+const storbild=document.getElementById("stor-bild");
+const stangbild=document.getElementById("stang-bild");
+const bildtext=document.getElementById("bildtext");
+
+bilder.forEach(function (bild) {
+  bild.addEventListener("click", function() {  
+    storbild.src = bild.src;
+    storbild.alt = bild.alt;
+
+    bildtext.textContent = bild.dataset.caption;  
+
+    lightbox.style.display = "flex";
+});
+}); 
+
+stangbild.addEventListener ("click", function() {
+    lightbox.style.display = "none";
+});
+
+lightbox.addEventListener("click", function(event) {
+    if (event.target === lightbox) {
+        lightbox.style.display = "none";
+    }
 });

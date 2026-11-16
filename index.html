@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" href="./images/favicon.png">
     <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/qdx5grk.css">
+    <script src="./script/my-script.js" defer></script>
 </head>
 
 <body>
@@ -27,22 +28,39 @@
             <img src="./images/blomma.png" alt="" class="nav-blomma">
         </nav>
     </header>
-    <h1>"Välkomna till vårt paradis, vårt safe haven, Café Dahlia"</h1>
+    <h1>"Välkomna till vårt paradis, vårt Café Dahlia"</h1>
     <div class="med-varme">
-    <h2>Med värme, Siv och Maya</h2>
+        <h2>Med värme, Siv och Maya</h2>
     </div>
+    <main class="hem-container">
+        <section class="hem-text">
+            <p>Ni hittar oss vid Världens Ände i Arkösund, utanför Norrköping. Här finner ni en mysig atmosfär, färska
+                blommor,
+                mat och fika. Vårt mål är att skapa en plats där människor kan samlas, koppla av och samla energi. Låt
+                den salta
+                havsluften
+                rena dig och njut av havets ljud där havet glittrar framför dig.</p>
+            <p> Kom ensam eller med vänner, hos oss får alla livets stunder plats!</p>
+        </section>
+        <section class="hem-bilder">
+            <img src="./images/miljo.jpg" alt="Bild på miljön på Café Dahlia"
+                data-caption="Vår vackra miljö vid havet i Arkösund" />
+            <img src="./images/café.jpg" alt="Bild inne på Café Dahlia"
+                data-caption="Välkommen in till vårt mysiga café!" />
+            <img src="./images/Maya.bak.jpg" alt="Bild på Maya bakifrån när hon binder en bukett blommor"
+                data-caption="Maya binder blomsterbuketter med kärlek" />
+        </section>
+    </main>
+    <div id="lightbox" class="lightbox">
+        <button id="stang-bild" type="button" aria-label="Stäng bilden">
+            &times;
+        </button>
+        <div class="lightbox-innehall">
+            <img id="stor-bild" src="" alt="">
+            <p id="bildtext"></p>
+        </div>
 
-    <p>Ni hittar oss vid Världens Ände i Arkösund, utanför Norrköping. Här finner ni en mysig atmosfär, färska blommor,
-        mat och fika.</p>
-    <p>Vårt mål är att skapa en plats där människor kan samlas, koppla av och samla energi. Låt den salta havsluften
-        rena dig och njut av havets ljud där havet glittrar framför dig.</p>
-  <p> Kom ensam eller med vänner, hos oss får alla livets stunder plats!</p>
-
-    <img src="./images/miljo.png" alt="Bild på miljön på Café Dahlia" />
-    <img src="./images/café.png" alt="Bild inne på Café Dahlia" />
-    <img src="./images/Maya-bak.png" alt="Bild på Maya bakifrån när hon binder en bukett blommor"/>
-
-
+    </div>
 
 
 
@@ -53,13 +71,13 @@
 
 
     <footer>
-      
-        <h4> Hitta oss</h4>
+
+        <h3> Hitta oss</h3>
         <p>Världens Ände 3<br>620 50 Arkösund</p>
-        <h4>Kontakt</h4>
+        <h3>Kontakt</h3>
         <p>E-post: info@cafedahlia.se<br>Telefon: +46 (0)125 200 03</p>
-        <p>2023 Café Dahlia. All rights reserved.</p>
-        
+        <p>2026 Café Dahlia. All rights reserved.</p>
+
     </footer>
 </body>
 
