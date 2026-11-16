@@ -1,17 +1,19 @@
-/* Logga */
+/*LOGGA*/
+/*storlek loggan*/
 .logo {
     width: 100%;
     max-width: 450px;
     height: auto;
     display: block;
 }
-
+/*ruta runt logga när inte mus används*/
 .logo:focus-visible {
     outline: 2px solid #f25244;
     outline-offset: 4px;
 }
 
-/* Meny-header */
+/* MENY-HEADER */
+/*header-rutan*/
 header {
     background-color: #fff2f2;
     padding: 1rem 1.5rem;
@@ -21,7 +23,7 @@ header {
     gap: 1rem;
     align-items: center;
 }
-
+/*länkarna*/
 nav {
     display: flex;
     gap: 1rem;
@@ -32,28 +34,28 @@ nav {
     font-style: normal;
     font-size: 3.0rem;
 }
-
+/*dahlian mellan länkarna*/
 .nav-blomma {
     width: 100%;
     max-width: 30px;
     height: auto;
 }
-
+/*texten i länkarna*/
 nav a {
     text-decoration: none;
     color: #0d0d0d;
 }
-
+/*ändra utseende när musen åker över*/
 nav a:hover {
     color: #f25244;
 }
-
+/*ruta runt länkar när mus inte används*/
 nav a:focus-visible {
     outline: 2px solid #f25244;
     outline-offset: 4px;
 }
 
-/* Typografi */
+/*TYPOGRAFI*/
 h1 {
     font-family: "sacramento-pro", sans-serif;
     color: #0d0d0d;
@@ -68,7 +70,6 @@ h2 {
     font-size: 3rem;
     margin-top: 0rem;
     margin-bottom: 0rem;
-
 }
 
 h3 {
@@ -77,7 +78,6 @@ h3 {
     font-size: 2.5rem;
     margin-top: 0rem;
     margin-bottom: 0rem;
-
 }
 
 h4 {
@@ -85,13 +85,12 @@ h4 {
     color: #0d0d0d;
     font-size: 2rem;
 }
-
+/*avvikande inställning för h2 inom div på index*/
 .med-varme h2 {
     font-family: "sacramento-pro", sans-serif;
     color: #0d0d0d;
     text-align: right;
     font-size: 1.5rem;
-
 }
 
 p {
@@ -99,7 +98,8 @@ p {
     color: #0d0d0d;
 }
 
-/*Hem*/
+/*HEM*/
+/*bildernas placering*/
 .hem-bilder {
     width: 80%;
     margin: 2rem auto;
@@ -107,9 +107,8 @@ p {
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
     column-gap: 1rem;
-
 }
-
+/*inställning enskild bild*/
 .hem-bilder img {
     width: 100%;
     height: auto;
@@ -118,18 +117,18 @@ p {
     cursor: pointer;
     transition: transform 0.3s ease;
 }
-
+/*sista bildens placering*/
 .hem-bilder img:last-child {
     grid-column: 1 / 3;
     justify-self: center;
     width: 50%;
 }
-
+/*vad som visas när man för musen över bilden*/
 .hem-bilder img:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-
+/*LIGHTBOX-rutan som den stora bilden öppnas i*/
 .lightbox {
     display: none;
     position: fixed;
@@ -139,13 +138,13 @@ p {
     align-items: center;
     z-index: 1000;
 }
-
+/*rutans storlek för bilden*/
 .lightbox img {
     max-width: 90%;
     max-height: 85vh;
     object-fit: contain;
 }
-
+/*var bilden ska ligga*/
 .lightbox-innehall {
     display: flex;
     flex-direction: column;
@@ -165,7 +164,7 @@ p {
     text-align: center;
     margin-top: 1rem;
 }
-
+/*kryss-knapp*/
 #stang-bild {
     position: absolute;
     top: 1rem;
@@ -177,7 +176,7 @@ p {
     cursor: pointer;
 }
 
-/*Meny*/
+/*MENY*/
 .meny-container {
     display: flex;
     gap: 2rem;
@@ -185,16 +184,19 @@ p {
     padding: 2rem;
 }
 
+/* texten tar 50% av skärmen*/
 .meny-text {
     width: 50%;
 }
 
+/*listans utseende*/
 .meny-text ul {
     border-left: 5px solid #d98825;
     list-style-type: none;
     padding: 0.5rem;
 }
 
+/*radavstånd i min lista*/
 .meny-text ul li {
     padding-bottom: 0.5rem;
 }
@@ -203,7 +205,7 @@ p {
     font-weight: bold;
 }
 
-
+/* bildernas placering*/
 .meny-bilder {
     width: 50%;
     display: grid;
@@ -214,11 +216,24 @@ p {
     column-gap: 2rem;
 }
 
+/*inställning för enskilda bilder*/
 .meny-bilder img {
     width: 100%;
     height: auto;
     display: block;
     border-radius: 8px;
+}
+
+/*responsiv - hur den ska beté sig vid mindre skärm*/
+@media (max-width: 768px) {
+    .meny-container {
+        flex-direction: column;
+    }
+
+    .meny-text,
+    .meny-bilder {
+        width: 100%;
+    }
 }
 
 /*FORMULÄR*/
@@ -236,18 +251,19 @@ p {
 }
 
 /*rubrik och beskrivning - formulär*/
-.kontakt h3, .kontakt >p {
+.kontakt h3,
+.kontakt>p {
     text-align: center;
 }
 
-/*fälten - formuläret*/
+/*fälten*/
 #kontaktformular {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-/*textrutor - formuläret*/
+/*textrutor*/
 #kontaktformular input,
 #kontaktformular textarea {
     width: 100%;
@@ -258,7 +274,7 @@ p {
     box-sizing: border-box;
 }
 
-/*skicka-knapp - formulär*/
+/*skicka-knapp*/
 #kontaktformular button {
     background-color: #F2856D;
     color: #0d0d0d;
@@ -266,67 +282,84 @@ p {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-
 }
 
-@media (max-width: 768px) {
-    .meny-container {
-        flex-direction: column;
-    }
 
-    .meny-text,
-    .meny-bilder {
-        width: 100%;
-    }
-
-}
 
 /*Om oss*/
+/*Bildernas placering*/
 .omoss-bilder {
     width: 80%;
+    height: auto;
     margin: 2rem auto;
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
     column-gap: 1rem;
-
 }
-
+/*inställning för enskild bild*/
 .omoss-bilder img {
-    width: 100%;
+    width: 50%;
     height: auto;
-    display: block;
     border-radius: 8px;
 }
 
+@media (max-width: 768px) {
+    .omoss-bilder {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .omoss-bilder img {
+        width: 100%;
+    }
+}
+
+
+
+/*FOOTER*/
+/*hela footer-rutan*/
 footer {
     background-color: #fff2f2;
     padding: 1rem;
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
     color: #0d0d0d;
     text-align: center;
-    display: block;
-}
 
+}
+/*rubrik*/
 footer h3 {
     font-family: "sacramento-pro", sans-serif;
     font-size: 2rem;
     margin-top: 0rem;
     margin-bottom: 0rem;
-    
 }
-
+/*paragraf*/
 footer p {
     margin-top: 0rem;
 }
+/*hitta oss*/
 .footer1 {
-    display: flex;
+    width: 50%;
 }
+/*kontakt*/
 .footer2 {
-    display: grid;
+    width: 50%;
+}
+/*responsiv- hur den ska beté sig vid mindre skärm*/
+@media (max-width:600px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer1,
+    .footer2 {
+        width: 100%;
+    }
 }
 
-/*Jag vill att , hitta oss och kontakt ska ligga på en rad och börja från vänster,
-först hitta oss och sen info under, samma med kontakt. sen 2026 café dahlia i mitten
-längst ner. jag vill också minska utrymmet över och under rubrikerna.*/
+/*FLYTTA ALL @MEDIA HIT*/
