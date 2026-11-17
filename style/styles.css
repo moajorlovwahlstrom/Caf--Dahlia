@@ -313,7 +313,7 @@ footer h3 {
     font-family: "sacramento-pro", sans-serif;
     font-size: 2rem;
     margin-top: 0rem;
-    margin-bottom: 0rem;
+    margin-bottom: 0.3rem;
 }
 /*paragraf*/
 footer p {
@@ -322,7 +322,8 @@ footer p {
 
 /*hitta oss - kontakt*/
 .footer1,
-.footer2 {
+.footer2,
+.footer3 {
     flex: 1;
     min-width: 0;
 }
