@@ -42,16 +42,22 @@
         <div class="kontakt">
             <h3>Kontakta Café Dahlia</h3>
             <p>Har du frågor eller vill du boka ett event? Skicka en förfrågan</p>
-            <form id="kontaktformular">
+            <form id="kontaktformular" action="https://formspree.io/f/xvkaarnj" method="post">
+
                 <label for="namn">Ditt namn:</label>
-                <input type="text" id="namn" required>
+                <input type="text" id="namn" name="name" required>
                 <label for="epost">Din e-postadress:</label>
-                <input type="email" id="epost" required>
+                <input type="email" id="epost" name="email" required>
                 <label for="meddelande">Ditt meddelande:</label>
-                <textarea id="meddelande" required></textarea>
+                <textarea id="meddelande" name="message"></textarea>
                 <button type="submit">Skicka förfrågan</button>
+                <p class="gdpr-text">När du kontaktar Café Dahlia via formuläret
+                    använder vi ditt namn, din e-postadress och
+                    ditt meddelande för att kunna besvara din
+                    förfrågan. Uppgifterna hanteras via Formspree
+                    och används inte för marknadsföring.</p>
             </form>
-            <p id="bekraftelse"></p>
+            <p id="bekraftelse" role="status"></p>
         </div>
     </main>
     <footer>
