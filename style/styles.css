@@ -215,7 +215,7 @@ p {
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
     margin-top: 10rem;
-    row-gap: 3rem;
+    row-gap: 2rem;
     column-gap: 2rem;
 }
 /*inställning för enskilda bilder*/
