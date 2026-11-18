@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <!--HEADER: sidan meny som ligger högst upp-->
     <header>
         <a class="logo" href="index.html"><img src="./images/Logga_dahlia.svg" alt="Café Dahlia logotyp" /></a>
         <nav>
@@ -27,8 +28,11 @@
             <a href="bilder.html">Bilder</a>
         </nav>
     </header>
+    <!--MAIN: sidans huvudskliga innehåll-->
     <main class="hem-container">
+        <!--välkomstsektion med information om caféet-->
         <h1>"Välkomna till vårt paradis, vårt Café Dahlia"</h1>
+        <!--en div med klass för att kunna göra en CSS för just den h2 och inte alla h2-->
         <div class="med-varme">
             <h2>Med värme, Siv & Maya</h2>
         </div>
@@ -41,6 +45,7 @@
                 rena dig och njut av havets ljud där havet glittrar framför dig.</p>
             <p> Kom ensam eller med vänner, hos oss får alla livets stunder plats!</p>
         </section>
+        <!--Bildgalleri: bilder från caféet-->
         <section class="hem-bilder">
             <img src="./images/ute-host.jpg" alt="Bild på miljön på Café Dahlia på hösten"
                 data-caption="Vår vackra miljö i höstskrud" />
@@ -48,9 +53,9 @@
                 data-caption="Plocka en höstbukett och omfamna höstens färger" />
             <img src="./images/vinter-inne.jpg" alt="Bild inne på Café Dahlia på vinter"
                 data-caption="Vintermys och värme vid brasan" />
-
         </section>
     </main>
+    <!--en lightbox för att bilderna ska bli större vis klick-->
     <div id="lightbox" class="lightbox">
         <button id="stang-bild" type="button" aria-label="Stäng bilden">
             &times;
@@ -60,6 +65,7 @@
             <p id="bildtext"></p>
         </div>
     </div>
+    <!--FOOTER: kontaktuppgifter, adress och öppettider-->
     <footer>
         <div class="footer1">
             <h3> Hitta oss</h3>
@@ -70,7 +76,6 @@
         </div>
         <div class="footer2">
             <h3>Kontakt</h3>
-
             <a href="mailto:info@cafedahlia.se" class="kontakt-lank">
                 💌 info@cafedahlia.se
             </a>
@@ -82,6 +87,7 @@
             <h3>Öppettider</h3>
             <p>Måndag-Fredag 10.00-17.00 <br>Lördag-Söndag 8.00-20.00</p>
         </div>
+        <!--Länk till min JavaScript-->
         <script src="./script/my-script.js" defer></script>
     </footer>
 </body>

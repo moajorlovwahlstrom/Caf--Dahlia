@@ -14,6 +14,7 @@
 }
 
 /*MAIN*/
+/*att det ska vara centrerat även om skärmen är större*/
 main {
     width: 90%;
     max-width: 1250px;
@@ -62,13 +63,14 @@ nav a:hover {
     color: #f25244;
 }
 
-/*ruta runt länkar när mus inte används*/
+/*ruta runt länkar vid användning av tangentbord*/
 nav a:focus-visible {
     outline: 2px solid #f25244;
     outline-offset: 4px;
 }
 
 /*TYPOGRAFI*/
+/*huvudrubrik*/
 h1 {
     font-family: "sacramento-pro", sans-serif;
     color: #0d0d0d;
@@ -77,6 +79,7 @@ h1 {
     margin-bottom: 0rem;
 }
 
+/*mellanrubriker*/
 h2 {
     font-family: "sacramento-pro", sans-serif;
     color: #0d0d0d;
@@ -107,6 +110,7 @@ h4 {
     font-size: 1.5rem;
 }
 
+/*paragrafer*/
 p {
     font-family: "playfair display", serif;
     color: #0d0d0d;
@@ -181,6 +185,7 @@ p {
     object-fit: contain;
 }
 
+/*bildtexten som kommer upp när bilden blir större*/
 #bildtext {
     color: white;
     font-size: 1.2rem;
@@ -202,6 +207,7 @@ p {
 }
 
 /*MENY*/
+/*main i menyn som ligger i klassen meny.container*/
 .meny-container {
     display: flex;
     gap: 2rem;
@@ -214,6 +220,7 @@ p {
     width: 50%;
 }
 
+/*centrerar min h2 i menyn*/
 .center {
     text-align: center;
 }
@@ -230,6 +237,7 @@ p {
     padding-bottom: 0.5rem;
 }
 
+/*paragrafen i class meny-text*/
 .meny-text p {
     font-weight: bold;
 }
@@ -295,7 +303,7 @@ p {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/*rubrik och beskrivning - formulär*/
+/*rubrik och beskrivning*/
 .kontakt h3,
 .kontakt>p {
     text-align: center;
@@ -555,13 +563,14 @@ footer p {
 /*BILDER - responsiv - vid mindre skärm*/
 @media (max-width: 768px) {
     .bilder-bildersidan {
-       grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 
     .bilder-bildersidan img {
         width: 100%;
         margin: 0;
     }
+
     .bilder-bildersidan img:last-child {
         grid-column: auto;
         width: 100%;
