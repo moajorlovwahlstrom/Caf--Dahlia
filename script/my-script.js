@@ -51,7 +51,7 @@ const lightbox = document.getElementById("lightbox");
 const storbild = document.getElementById("stor-bild");
 const stangbild = document.getElementById("stang-bild");
 const bildtext = document.getElementById("bildtext");
-/*vad som ska händas vid klick på bilden*/
+/*vad som ska händer vid klick på bilden*/
 bilder.forEach(function (bild) {
     bild.addEventListener("click", function () {
         storbild.src = bild.src;
@@ -60,14 +60,14 @@ bilder.forEach(function (bild) {
         lightbox.style.display = "flex";
     });
 });
-/*om funktionen stangbild finns gäller nedan*/
+/*om funktionen stangbild finns gäller nedan annars inte*/
 if (stangbild)
     /*vad som händer vid klick på krysset*/ {
     stangbild.addEventListener("click", function () {
         lightbox.style.display = "none";
     });
 }
-/*om funktionen lightbox finns gäller nedan*/
+/*om funktionen lightbox finns gäller nedan annars inte*/
 if (lightbox)
     /*vad som händer när du trycker bredvid bilden, på lightboxen*/ {
     lightbox.addEventListener("click", function (event) {
