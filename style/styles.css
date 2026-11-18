@@ -390,6 +390,12 @@ footer p {
     margin-top: 0rem;
 }
 
+.footer2 p {
+    margin-bottom: 0.1rem;
+}
+
+
+
 /*hitta oss - kontak - öppettider*/
 .footer1,
 .footer2,
@@ -426,12 +432,12 @@ footer p {
 }
 
 /*När muspekaren är över adressen*/
-.kontakt-lank:hover {
+.kontakt-lank p:hover {
     color: #f25244;
 }
 
 /*När man navigerar med tangentbord*/
-.kontakt-lank:focus-visible {
+.kontakt-lank p:focus-visible {
     outline: 2px solid #f25244;
     outline-offset: 4px;
 }
