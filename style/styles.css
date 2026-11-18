@@ -6,11 +6,13 @@
     height: auto;
     display: block;
 }
+
 /*ruta runt logga när inte mus används*/
 .logo:focus-visible {
     outline: 2px solid #f25244;
     outline-offset: 4px;
 }
+
 /*MAIN*/
 main {
     width: 90%;
@@ -29,6 +31,7 @@ header {
     gap: 1rem;
     align-items: center;
 }
+
 /*länkarna*/
 nav {
     display: flex;
@@ -40,21 +43,25 @@ nav {
     font-style: normal;
     font-size: 3.0rem;
 }
+
 /*dahlian mellan länkarna*/
 .nav-blomma {
     width: 100%;
     max-width: 30px;
     height: auto;
 }
+
 /*texten i länkarna*/
 nav a {
     text-decoration: none;
     color: #0d0d0d;
 }
+
 /*ändra utseende när musen åker över*/
 nav a:hover {
     color: #f25244;
 }
+
 /*ruta runt länkar när mus inte används*/
 nav a:focus-visible {
     outline: 2px solid #f25244;
@@ -69,6 +76,7 @@ h1 {
     text-align: center;
     margin-bottom: 0rem;
 }
+
 h2 {
     font-family: "sacramento-pro", sans-serif;
     color: #0d0d0d;
@@ -76,6 +84,7 @@ h2 {
     margin-top: 0rem;
     margin-bottom: 0rem;
 }
+
 h3 {
     font-family: "sacramento-pro", sans-serif;
     color: #0d0d0d;
@@ -83,11 +92,13 @@ h3 {
     margin-top: 0rem;
     margin-bottom: 0rem;
 }
+
 h4 {
     font-family: "sacramento-pro", sans-serif;
     color: #0d0d0d;
     font-size: 2rem;
 }
+
 /*avvikande inställning för h2 inom div på index*/
 .med-varme h2 {
     font-family: "sacramento-pro", sans-serif;
@@ -95,6 +106,7 @@ h4 {
     text-align: right;
     font-size: 1.5rem;
 }
+
 p {
     font-family: "playfair display", serif;
     color: #0d0d0d;
@@ -110,6 +122,7 @@ p {
     row-gap: 2rem;
     column-gap: 1rem;
 }
+
 /*inställning enskild bild*/
 .hem-bilder img {
     width: 100%;
@@ -119,12 +132,14 @@ p {
     cursor: pointer;
     transition: transform 0.3s ease;
 }
+
 /*sista bildens placering*/
 .hem-bilder img:last-child {
     grid-column: 1 / 3;
     justify-self: center;
     width: 50%;
 }
+
 /*vad som visas när man för musen över bilden*/
 .hem-bilder img:hover {
     transform: scale(1.05);
@@ -143,6 +158,7 @@ p {
     box-sizing: border-box;
     z-index: 1000;
 }
+
 /*rutans storlek för bilden*/
 .lightbox img {
     max-width: 90%;
@@ -150,6 +166,7 @@ p {
     overflow-y: auto;
     object-fit: contain;
 }
+
 /*var bilden ska ligga*/
 .lightbox-innehall {
     display: flex;
@@ -157,17 +174,20 @@ p {
     align-items: center;
     max-width: 90%;
 }
+
 .lightbox-innehall img {
     max-width: 100%;
     max-height: 75vh;
     object-fit: contain;
 }
+
 #bildtext {
     color: white;
     font-size: 1.2rem;
     text-align: center;
     margin-top: 1rem;
 }
+
 /*kryss-knapp*/
 #stang-bild {
     position: absolute;
@@ -188,26 +208,32 @@ p {
     align-items: flex-start;
     padding: 2rem;
 }
+
 /* texten tar 50% av skärmen*/
 .meny-text {
     width: 50%;
 }
+
 .center {
     text-align: center;
 }
+
 /*listans utseende*/
 .meny-text ul {
     border-left: 5px solid #d98825;
     list-style-type: none;
     padding: 0.5rem;
 }
+
 /*radavstånd i min lista*/
 .meny-text ul li {
     padding-bottom: 0.5rem;
 }
+
 .meny-text p {
     font-weight: bold;
 }
+
 /* bildernas placering*/
 .meny-bilder {
     width: 50%;
@@ -218,6 +244,7 @@ p {
     row-gap: 2rem;
     column-gap: 2rem;
 }
+
 /*inställning för enskilda bilder*/
 .meny-bilder img {
     width: 100%;
@@ -245,12 +272,14 @@ p {
 .kontakt>p {
     text-align: center;
 }
+
 /*fälten*/
 #kontaktformular {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
+
 /*textrutor*/
 #kontaktformular input,
 #kontaktformular textarea {
@@ -261,6 +290,7 @@ p {
     border-radius: 5px;
     box-sizing: border-box;
 }
+
 /*skicka-knapp*/
 #kontaktformular button {
     background-color: #F2856D;
@@ -270,6 +300,7 @@ p {
     border-radius: 5px;
     cursor: pointer;
 }
+
 /*GDPR-text*/
 .gdpr-text {
     font-size: 0.8rem;
@@ -287,6 +318,7 @@ p {
     display: flex;
     gap: 1rem;
 }
+
 /*inställning för enskild bild*/
 .omoss-bilder img {
     width: calc((100% - 1rem) / 2);
@@ -308,6 +340,7 @@ footer {
     text-align: center;
 
 }
+
 /*rubrik*/
 footer h3 {
     font-family: "sacramento-pro", sans-serif;
@@ -315,12 +348,13 @@ footer h3 {
     margin-top: 0rem;
     margin-bottom: 0.3rem;
 }
+
 /*paragraf*/
 footer p {
     margin-top: 0rem;
 }
 
-/*hitta oss - kontakt*/
+/*hitta oss - kontak - öppettider*/
 .footer1,
 .footer2,
 .footer3 {
@@ -328,6 +362,41 @@ footer p {
     min-width: 0;
 }
 
+/*Adresslänk i footer*/
+.adress-lank {
+    color: #0d0d0d;
+    text-decoration: none;
+    font-family: "playfair display", serif;
+    cursor: pointer;
+}
+
+/*När muspekaren är över adressen*/
+.adress-lank:hover {
+    color: #f25244;
+}
+
+/*När man navigerar med tangentbord*/
+.adress-lank:focus-visible {
+    outline: 2px solid #f25244;
+    outline-offset: 4px;
+}
+/*Kontaktlänkar i footer*/
+.kontakt-lank {
+  color: #0d0d0d;
+    text-decoration: none;
+    font-family: "playfair display", serif;
+    cursor: pointer;
+}
+/*När muspekaren är över adressen*/
+.kontakt-lank:hover {
+    color: #f25244;
+}
+
+/*När man navigerar med tangentbord*/
+.kontakt-lank:focus-visible {
+    outline: 2px solid #f25244;
+    outline-offset: 4px;
+}
 
 /*@MEDIA*/
 /*MENY - responsiv - vid mindre skärm*/
@@ -336,11 +405,12 @@ footer p {
         flex-direction: column;
         padding: 1rem;
     }
-    
+
     .meny-text,
     .meny-bilder {
         width: 100%;
     }
+
     .meny-bilder {
         grid-template-columns: 1fr;
         margin-top: 2rem;
@@ -361,6 +431,7 @@ footer p {
         flex: none;
     }
 }
+
 /*OM OSS - responsiv - vid mindre skärm*/
 @media (max-width: 768px) {
     .omoss-bilder {
@@ -372,31 +443,37 @@ footer p {
         width: 100%;
     }
 }
+
 /*HEM - responsiv vid mindre skärm*/
 @media (max-width: 768px) {
     .hem-bilder {
         width: 100%;
         grid-template-columns: 1fr;
     }
+
     .hem-bilder img:last-child {
         grid-column: auto;
         width: 100%;
     }
 }
+
 /*HEADER - responsiv vid mindre skärm*/
 @media (max-width: 768px) {
     header {
         flex-direction: column;
         align-items: center;
     }
+
     .logo {
         max-width: 250px;
     }
+
     nav {
         justify-content: center;
         font-size: 2 rem;
         gap: 0.5rem;
     }
+
     .nav-blomma {
         max-width: 20px;
     }
