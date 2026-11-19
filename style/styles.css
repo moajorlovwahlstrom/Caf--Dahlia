@@ -6,6 +6,12 @@
     height: auto;
     display: block;
 }
+/*storlek bilden i loggan*/
+.logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
 /*ruta runt logga när inte mus används*/
 .logo:focus-visible {
