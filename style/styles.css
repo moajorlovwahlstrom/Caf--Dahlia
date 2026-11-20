@@ -431,6 +431,9 @@ footer p {
 
 /*Kontaktlänkar i footer*/
 .kontakt-lank {
+    display: block;
+    width: fit-content;
+    margin: 0.75rem auto;
     color: #0d0d0d;
     text-decoration: none;
     font-family: "playfair display", serif;
@@ -438,12 +441,12 @@ footer p {
 }
 
 /*När muspekaren är över adressen*/
-.kontakt-lank p:hover {
+.kontakt-lank:hover {
     color: #f25244;
 }
 
 /*När man navigerar med tangentbord*/
-.kontakt-lank p:focus-visible {
+.kontakt-lank:focus-visible {
     outline: 2px solid #f25244;
     outline-offset: 4px;
 }
